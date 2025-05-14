@@ -19,7 +19,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/churn-app .
+      run: docker build -t akhilsareshwala01/telecom-customer-churn-prediction-using-deep-learning-ann .
 
     - name: Push Docker image
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/churn-app
+      run: docker push akhilsareshwala01/telecom-customer-churn-prediction-using-deep-learning-ann
